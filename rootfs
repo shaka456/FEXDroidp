@@ -28,8 +28,8 @@ done
   
   echo "Download complete"
   
-  echo "setting up Ubuntu_23_04 as Default RootFS"
-  mv Ubuntu_23_04.sqsh $HOME/.fex-emu/RootFS/Ubuntu_23_04.sqsh
+  echo "setting up Ubuntu_24_04 as Default RootFS"
+  mv Ubuntu_24_04.sqsh $HOME/.fex-emu/RootFS/Ubuntu_24_04.sqsh
   echo ""
   
   cd $HOME/.fex-emu/RootFS
@@ -37,11 +37,11 @@ done
   echo ""
   
   echo "Extracting ..."
-  unsquashfs Ubuntu_23_04.sqsh
+  unsquashfs Ubuntu_24_04.sqsh
   
-  rm -rf Ubuntu_23_04.sqsh
+  rm -rf Ubuntu_24_04.sqsh
   
-  mv squashfs-root Ubuntu_23_04
+  mv squashfs-root Ubuntu_24_04
   
   echo ""
   
